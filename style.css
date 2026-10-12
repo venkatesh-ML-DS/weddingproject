@@ -1,0 +1,27 @@
+
+/* One-by-one falling text animation */
+.invitation > * {
+  animation: fallIn 0.8s ease-out both;
+}
+
+.invitation > *:nth-child(1)  { animation-delay: 0.2s; }
+.invitation > *:nth-child(2)  { animation-delay: 0.6s; }
+.invitation > *:nth-child(3)  { animation-delay: 1s; }
+.invitation > *:nth-child(4)  { animation-delay: 1.4s; }
+.invitation > *:nth-child(5)  { animation-delay: 1.8s; }
+.invitation > *:nth-child(6)  { animation-delay: 2.2s; }
+.invitation > *:nth-child(7)  { animation-delay: 2.6s; }
+.invitation > *:nth-child(8)  { animation-delay: 3s; }
+.invitation > *:nth-child(9)  { animation-delay: 3.4s; }
+.invitation > *:nth-child(10) { animation-delay: 3.8s; }
+
+@keyframes fallIn {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
